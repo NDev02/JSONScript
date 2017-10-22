@@ -1,3 +1,9 @@
+//WRITTEN BY NATHAN GORDON
+//OCT 21, 2017
+
+//This is the JSON Compiler
+//To use it, load a json file and set the call back function to compileAndRun, the rest will be done for you.
+
 function compileAndRun(rawJsonData)
 {
     Data = rawJsonData;
