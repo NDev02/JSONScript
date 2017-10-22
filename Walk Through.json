@@ -1,0 +1,43 @@
+
+//ATTENTION: THIS WILL NOT RUN!!
+//COMMENTS ARE INVALID IN JSON DOCUMENTS 
+//IF YOU NEED AN EXAMPLE THAT WILL RUN THEN USE 'main.json'.
+
+{
+    //Defines the classes that are to be called in the order of which they are listed.
+    "Classes":[
+        "Calc",
+        "IgnoreCalc",
+        "IgnoreCalcShowSingleQuotation",
+        "Main"
+    ],
+    //Creates a new Class called 'Main'
+    "Main":[
+        //Defines a method called 'main', note that it is not yet necessary to define a method and that they are currently ignored by the compiler anyway.
+        ["main",
+            //Creates a new line of code the first array is the method you are calling and the second array is the parameters you are passing to that method.
+            //The method, echo, will put the parameter(s), in this case 'HTML', into the current html document much like PHP does.
+            [["echo"],["HTML"]],
+            //The method, log, will put the parameter(s), in this case 'Hello, World!', into the console much like console.log() does in JavaScript.
+            [["log"],["Hello, World!"]]
+        ]
+    ],
+    "Calc":[
+        ["calc",
+            //The method, log, will put the parameter(s), in this case '2*2*2', into the console much like console.log() does in JavaScript but if '2*2*2' is not surrounded by '' then it will multiply the values instead before logging.
+            [["log"],["2*2*2"]]
+        ]
+    ],
+    "IgnoreCalc":[
+        ["igCalc",
+            //This time 'log' will log to the console '2*2*2' because the expression is surrounded by single quotes.
+            [["log"],["'2*2*2'"]]
+        ]
+    ],
+    "IgnoreCalcShowSingleQuotation":[
+        ["igCalcShowQuotation",
+            //This time 'log' will log to the console ''2*2*2'' because the expression is surrounded by single quotes and the keyword '<esc>' comes before each single quote.
+            [["log"],["<esc>'2*2*2<esc>'"]]
+        ]
+    ]
+}

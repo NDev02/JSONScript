@@ -1,0 +1,29 @@
+{
+    "Classes":[
+        "Calc",
+        "IgnoreCalc",
+        "IgnoreCalcShowSingleQuotation",
+        "Main"
+    ],
+    "Main":[
+        ["main",
+            [["echo"],["HTML"]],
+            [["log"],["Hello, World!"]]
+        ]
+    ],
+    "Calc":[
+        ["calc",
+            [["log"],["2*2*2"]]
+        ]
+    ],
+    "IgnoreCalc":[
+        ["igCalc",
+            [["log"],["'2*2*2'"]]
+        ]
+    ],
+    "IgnoreCalcShowSingleQuotation":[
+        ["igCalcShowQuotation",
+            [["log"],["<esc>'2*2*2<esc>'"]]
+        ]
+    ]
+}

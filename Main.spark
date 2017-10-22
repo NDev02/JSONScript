@@ -1,0 +1,7 @@
+Class Main
+{
+    startM main()
+        echo ("HTML")
+        log ("Hello, World")
+    endM main
+}
